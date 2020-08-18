@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorpdown list</title>
+<style>
+    #mylist{
+
+        border:2px solid black;
+        width:500px;
+        height:70px;
+        text-align-last:20px;
+        align-content: center;
+    }
+</style>
+
+
+</head>
+
+<body> 
+<div id="mylist">
+<center>
+<select id="newone"> 
+
+    <option value="blue">blue </option>
+    <option value="yellow">yellow </option> 
+    <option value="red">red </option>
+    <option value="green">green </option>
+    <option value="pink">pink </option> 
+    <option value="gray">gray </option>
+
+
+</select>
+  <button id="btn" type ="submit"onclick="myfun()">submit</button>
+</center>
+</div> 
+<script>
+    function myfun() 
+    {
+      let a=  document.getElementById("mylist");
+      let b = document.getElementById("newone");
+    //   console.log(b);
+       a.style.backgroundColor=b.value;
+
+        // a.style.color ="yellow";
+    };
+    
+
+    
+</script>
+</body>
+</html>
